@@ -1,0 +1,46 @@
+/* ViewCart.css */
+
+/* Style for the container div */
+.container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style for the heading */
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: 149px;
+  font-family: cursive;
+  color: #ce1a1a;
+}
+
+/* Style for the book name and prize */
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Style for the book name */
+p:first-child {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style for the book prize */
+p:last-child {
+  color: #007bff;
+}
+
+/* Style for the table */
+.cart-table {
+  margin-top: 20px;
+}
+
+/* Responsive styles for the table */
+@media (max-width: 767px) {
+  .cart-table {
+    overflow-x: auto;
+    display: block;
+  }
+}

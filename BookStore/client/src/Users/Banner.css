@@ -1,0 +1,130 @@
+.banner {
+    background-image: url('./bookk.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 609px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content */
+}
+
+.description {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.bannerButton {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    background-color: #ff6347; /* Tomato background for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #ff4500; /* Darker tomato for hover effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bannerButton {
+    position: relative;
+    display: inline-block;
+   }
+   
+   .button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+   }
+   
+   .button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+   }
+   
+   .button.expanded {
+    animation: expandButton 0.5s forwards;
+   }
+   
+   @keyframes expandButton {
+     0% {
+       transform: scale(1);
+    }
+     50% {
+       transform: scale(1.1);
+    }
+     100% {
+       transform: scale(1);
+    }
+   }
+   
